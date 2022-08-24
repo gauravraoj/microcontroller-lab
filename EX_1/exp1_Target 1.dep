@@ -1,0 +1,3 @@
+Dependencies for Project 'exp1', Target 'Target 1': (DO NOT MODIFY !)
+F (.\Startup.s)(0x532C14EA)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips--list .\startup.lst --xref -o .\startup.o --depend .\startup.d)
+F (.\exp1.asm)(0x63062472)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips--list .\exp1.lst --xref -o .\exp1.o --depend .\exp1.d)

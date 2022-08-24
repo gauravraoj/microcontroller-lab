@@ -1,0 +1,73 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             SUM , CODE , READONLY
+    2 00000000         
+    3 00000000         ENTRY
+    4 00000000         
+    5 00000000         START
+    6 00000000         
+    7 00000000 E3A0100A        MOV              R1 , #10
+    8 00000004 E3A02000        MOV              R2 , #0
+    9 00000008         
+   10 00000008         LOOP
+   11 00000008 E0822001        ADD              R2 , R2 , R1
+   12 0000000C E2511001        SUBS             R1 , #0X01
+   13 00000010 1AFFFFFC        BNE              LOOP
+   14 00000014 EAFFFFFE 
+                       BACK    B                BACK
+   15 00000018                 END
+Command Line: --debug --xref --apcs=interwork --depend=.\exp2.d -o.\exp2.o -IC:
+\Keil\ARM\RV31\INC -IC:\Keil\ARM\CMSIS\Include -IC:\Keil\ARM\Inc\Philips --pred
+efine="__EVAL SETA 1" --list=.\exp2.lst exp2.asm
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+BACK 00000014
+
+Symbol: BACK
+   Definitions
+      At line 14 in file exp2.asm
+   Uses
+      At line 14 in file exp2.asm
+Comment: BACK used once
+ENTRY 00000000
+
+Symbol: ENTRY
+   Definitions
+      At line 3 in file exp2.asm
+   Uses
+      None
+Comment: ENTRY unused
+LOOP 00000008
+
+Symbol: LOOP
+   Definitions
+      At line 10 in file exp2.asm
+   Uses
+      At line 13 in file exp2.asm
+Comment: LOOP used once
+START 00000000
+
+Symbol: START
+   Definitions
+      At line 5 in file exp2.asm
+   Uses
+      None
+Comment: START unused
+SUM 00000000
+
+Symbol: SUM
+   Definitions
+      At line 1 in file exp2.asm
+   Uses
+      None
+Comment: SUM unused
+5 symbols
+336 symbols in table

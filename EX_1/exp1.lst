@@ -1,0 +1,66 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             MULTIPLY , CODE , READONLY
+    2 00000000         ENTRY
+    3 00000000         START
+    4 00000000 E3A01C19        MOV              R1 , #6400
+    5 00000004 E3A02D32        MOV              R2 , #3200
+    6 00000008         
+    7 00000008         NOP
+    8 00000008         END
+                       
+Command Line: --debug --xref --apcs=interwork --depend=.\exp1.d -o.\exp1.o -IC:
+\Keil\ARM\RV31\INC -IC:\Keil\ARM\CMSIS\Include -IC:\Keil\ARM\Inc\Philips --pred
+efine="__EVAL SETA 1" --list=.\exp1.lst exp1.asm
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+END 00000008
+
+Symbol: END
+   Definitions
+      At line 8 in file exp1.asm
+   Uses
+      None
+Comment: END unused
+ENTRY 00000000
+
+Symbol: ENTRY
+   Definitions
+      At line 2 in file exp1.asm
+   Uses
+      None
+Comment: ENTRY unused
+MULTIPLY 00000000
+
+Symbol: MULTIPLY
+   Definitions
+      At line 1 in file exp1.asm
+   Uses
+      None
+Comment: MULTIPLY unused
+NOP 00000008
+
+Symbol: NOP
+   Definitions
+      At line 7 in file exp1.asm
+   Uses
+      None
+Comment: NOP unused
+START 00000000
+
+Symbol: START
+   Definitions
+      At line 3 in file exp1.asm
+   Uses
+      None
+Comment: START unused
+5 symbols
+336 symbols in table
