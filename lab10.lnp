@@ -1,7 +1,0 @@
---cpu ARM7TDMI
-".\startup.o"
-".\lab10.o"
---library_type=microlib --strict --scatter ".\lab10.sct"
---summary_stderr --info summarysizes --map --xref --callgraph --symbols
---info sizes --info totals --info unused --info veneers
---list ".\lab10.map" -o .\lab10.axf
