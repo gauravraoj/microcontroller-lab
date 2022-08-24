@@ -1,0 +1,4 @@
+Dependencies for Project 'lab10', Target 'Target 1': (DO NOT MODIFY !)
+F (.\Startup.s)(0x532C14EA)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork --pd "__MICROLIB SETA 1"-I E:\keil4\ARM\RV31\INC-I E:\keil4\ARM\CMSIS\Include-I E:\keil4\ARM\Inc\Philips--list .\startup.lst --xref -o .\startup.o --depend .\startup.d)
+F (.\lab10.c)(0x630664DE)(-c --cpu ARM7TDMI -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I E:\keil4\ARM\RV31\INC-I E:\keil4\ARM\CMSIS\Include-I E:\keil4\ARM\Inc\Philips-o .\lab10.o --omf_browse .\lab10.crf --depend .\lab10.d)
+I (E:\keil4\ARM\Inc\Philips\lpc214x.h)(0x532C1500)
